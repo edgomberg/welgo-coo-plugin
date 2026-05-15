@@ -1,36 +1,34 @@
 # welgo-coo-plugin
 
-Pre-packed Claude Code setup for the Welgo COO role.
+Welgo COO plugin for Jessica Sese. Zero-token install via Tailscale identity.
 
-## What it does
+## Prereqs
 
-Bundles rules, skills, an MCP connection to Welgo Brain, hooks, and your agent definitions for the Welgo COO role.
-
-## Prereqs (one-time per machine)
-
-1. Claude Code installed.
-2. Tailscale installed and signed in with your work Google account.
-3. You've been added to the Welgo tailnet via Ed's share link.
-4. WELGO_BRAIN_TOKEN set in your shell (Ed sends this privately, paste into ~/.zshrc as export WELGO_BRAIN_TOKEN=..., then source ~/.zshrc). After Tailscale-identity auth is live (Phase 2 v0.3), token will no longer be needed.
+1. Tailscale installed and signed in with your Welgo email.
+2. Ed has shared the mac-mini-brain node with you (you see it in Tailscale machines list).
 
 ## Install
 
-Inside Claude Code:
-
 ```
-/plugin install https://github.com/edgomberg/welgo-coo-plugin
+claude plugin marketplace add edgomberg/welgo-coo-plugin
+claude plugin install welgo-coo-plugin@welgo-coo
 ```
 
-Confirm install. Restart Claude Code.
+Restart Claude Code. Plugin auto-downloads the Welgo Brain wrapper on first session.
 
-## Updates
+## Verify
 
-On every Claude Code launch, it checks for plugin updates. Banner shows when new version available. Run `/plugin update welgo-coo-plugin` to apply.
+Ask Claude: "what's in my Welgo task summary?"
+
+If it returns task counts, you are connected.
+
+## How it works
+
+- Plugin ships an MCP config pointing at the Mac Mini via Tailscale.
+- Wrapper script downloads automatically on plugin install.
+- Authentication is via Tailscale identity — your tailnet email auto-maps to your role on the Welgo Brain server.
+- No token paste required. No secrets in this repo.
 
 ## Escalation
 
-Anything outside your scope, post in Slack #opco and tag Ed.
-
-## Questions
-
-Ping Ed directly in Slack DM.
+Slack `#opco`, tag Ed.
