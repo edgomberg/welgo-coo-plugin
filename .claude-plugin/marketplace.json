@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "welgo-coo-plugin",
-      "source": ".",
+      "source": "./plugins/welgo-coo-plugin",
       "description": "Welgo COO plugin for Jessica Sese"
     }
   ]
