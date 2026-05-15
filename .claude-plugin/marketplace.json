@@ -1,0 +1,15 @@
+{
+  "name": "welgo-coo",
+  "owner": {
+    "name": "Ed Gomberg",
+    "email": "edgomberg@gmail.com"
+  },
+  "description": "Welgo COO plugin for Jessica Sese",
+  "plugins": [
+    {
+      "name": "welgo-coo-plugin",
+      "source": ".",
+      "description": "Welgo COO plugin for Jessica Sese"
+    }
+  ]
+}
