@@ -1,7 +1,10 @@
 {
   "name": "welgo-coo-plugin",
   "version": "0.1.0",
-  "description": "Welgo Welgo COO plugin — bundled rules, skills, MCP, hooks for Jessica Sese.",
-  "author": "Ed Gomberg",
+  "description": "Welgo COO plugin for Jessica Sese — operations, GSM, Hostaway, vendor management.",
+  "author": {
+    "name": "Ed Gomberg",
+    "email": "edgomberg@gmail.com"
+  },
   "license": "Private"
 }
