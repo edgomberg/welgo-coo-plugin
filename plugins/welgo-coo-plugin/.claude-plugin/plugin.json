@@ -1,7 +1,7 @@
 {
   "name": "welgo-coo-plugin",
-  "version": "0.3.0",
-  "description": "Welgo COO plugin for Sese + GSM team (Jes / Ron / Patricia / Benjamin / Yna). Dual auth: tailnet identity preferred, per-operator bearer fallback via ~/welgo/.env.",
+  "version": "0.4.0",
+  "description": "Welgo COO plugin for Sese + GSM team. Dual auth + self-identify (OPERATOR field). Skills overview bundled. Mandate: Claude Code primary surface, outside-work logs to Brain.",
   "author": {
     "name": "Ed Gomberg",
     "email": "edgomberg@gmail.com"
