@@ -3,7 +3,10 @@
     "welgo-brain": {
       "type": "stdio",
       "command": "bash",
-      "args": ["-c", "MCP_BEARER_TOKEN=tailscale-identity-no-token-needed WELGO_BRAIN_URL=https://mac-mini-brain.tail59326c.ts.net exec node $HOME/welgo/welgo-brain-remote-mcp.js"],
+      "args": [
+        "-c",
+        "ENV_FILE=\"$HOME/welgo/.env\"; if [ -f \"$ENV_FILE\" ]; then set -a; . \"$ENV_FILE\"; set +a; fi; export WELGO_BRAIN_URL=\"${WELGO_BRAIN_URL:-https://mac-mini-brain.tail59326c.ts.net}\"; export MCP_BEARER_TOKEN=\"${MCP_BEARER_TOKEN:-tailnet-identity-resolves-server-side}\"; exec node $HOME/welgo/welgo-brain-remote-mcp.js"
+      ],
       "env": {}
     }
   }
