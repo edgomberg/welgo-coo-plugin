@@ -4,12 +4,12 @@
     "name": "Ed Gomberg",
     "email": "edgomberg@gmail.com"
   },
-  "description": "Welgo COO plugin for Jessica Sese",
+  "description": "Welgo COO + GSM team plugin. Dual-auth, operator self-identify, bundled docs.",
   "plugins": [
     {
       "name": "welgo-coo-plugin",
       "source": "./plugins/welgo-coo-plugin",
-      "description": "Welgo COO plugin for Jessica Sese"
+      "description": "Welgo COO + GSM team plugin: MCP to Welgo Brain + onboarding + cheatsheet."
     }
   ]
 }
