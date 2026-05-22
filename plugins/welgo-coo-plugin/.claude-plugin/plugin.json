@@ -1,7 +1,7 @@
 {
   "name": "welgo-coo-plugin",
-  "version": "0.6.0",
-  "description": "Welgo COO + GSM team plugin. Dual-auth (tailnet OR bearer). Operator self-identify (OPERATOR slug). Bundles README + ONBOARDING + CHEATSHEET + SKILLS-OVERVIEW. Mandate: Claude Code is the operator surface, Brain is the system of record.",
+  "version": "0.7.0",
+  "description": "Welgo COO + GSM team plugin. Dual-auth (tailnet OR bearer). Operator self-identify (OPERATOR slug). Bundles 3 Brain-MCP-wrapping slash commands (/welgo-status, /welgo-capture, /welgo-delegate) + ONBOARDING + CHEATSHEET + SKILLS-OVERVIEW. Session-start: auto-update check + force-read-cheatsheet on version bump. Mandate: Claude Code is the operator surface, Brain is the system of record.",
   "author": {
     "name": "Ed Gomberg",
     "email": "edgomberg@gmail.com"

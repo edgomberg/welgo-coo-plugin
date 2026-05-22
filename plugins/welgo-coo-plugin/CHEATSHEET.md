@@ -15,12 +15,12 @@ Rule of thumb: if Brain doesn't know, it didn't happen.
 
 | Command | What it does | When to use |
 |---|---|---|
-| `list my open tasks` | Welgo Brain returns your queue. | Start of shift. Anytime you forget what's pending. |
-| `create a task: <title>` | Brain logs a task for you (assignee = you, unless you say otherwise). | Anything you committed to that's not already in your queue. |
-| `/ce-brainstorm` | Walks you through a problem and writes a requirements doc. | When you're stuck on scope or unsure how to approach a vendor / landlord ask. |
-| `/ce-compound` | Documents a solved problem so the team doesn't re-solve it. | After you finish something tricky. Burns 30 seconds, saves the team hours. |
-| `voice-check this draft` | Catches AI-tells + voice mismatch in any outbound text. | Before sending any landlord / vendor / guest email or Slack. |
-| `mark task <id> done` | Closes the task in Brain with your note. | Every time you finish something. |
+| `/welgo-status` | Brain returns your open + in-progress queue plus team rollup. | Start of shift. End of shift. Anytime. |
+| `/welgo-capture <text>` | Logs an outside-work action (call, portal click, in-person) to Brain as a task assigned to you. | After you do anything outside Claude Code that should be in the system of record. |
+| `/welgo-delegate <recipient>: <task>` | Creates a Brain task assigned to a teammate + reminds you to Slack DM them with @-mention. | Handing off a single task to Sese, Tom, Angela, Jes, Ron, Patricia, Benjamin, Yna, or Ed. |
+| `/ce-brainstorm` | Walks you through a problem and writes a requirements doc. (Requires compound-engineering-plugin install.) | Stuck on scope. Vendor pick. Ambiguous landlord ask. |
+| `/ce-compound` | Documents a solved problem so the team doesn't re-solve it. (Requires compound-engineering-plugin install.) | After you finish something tricky. |
+| `mark task <id> done` | Plain English. Closes the task in Brain with your note. | Every time you finish something. |
 
 ## Welgo Brain MCP queries (plain English, no slash needed)
 
