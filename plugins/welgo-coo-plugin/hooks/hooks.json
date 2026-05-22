@@ -8,6 +8,14 @@
             "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/install-fetch-wrapper.sh"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/session-start-plugin-update-check.sh"
+          }
+        ]
       }
     ]
   }
